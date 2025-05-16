@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   mysql:
     image: mysql:8.0
@@ -14,6 +16,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   airflow-webserver:
+    user: root
     build: .
     container_name: airflow_webserver
     restart: always
@@ -25,19 +28,20 @@ services:
     depends_on:
       - mysql
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./data:/opt/airflow/data
-      - ./logs:/opt/airflow/logs
+      - dags_volume:/opt/airflow/dags
+      - data_volume:/opt/airflow/data
+      - airflow_logs:/opt/airflow/logs
     ports:
       - "8088:8080"
     command: >
       bash -c "
       airflow db upgrade &&
-      airflow users create --username admin --firstname Air --lastname Flow --role Admin --password admin --email admin@example.com &&
+      airflow users create --username admin --firstname Air --lastname Flow --role Admin --password admin --email admin@example.com --force &&
       airflow webserver
       "
 
   airflow-scheduler:
+    user: root
     build: .
     container_name: airflow_scheduler
     restart: always
@@ -49,15 +53,17 @@ services:
     depends_on:
       - mysql
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./data:/opt/airflow/data
-      - ./logs:/opt/airflow/logs  
+      - dags_volume:/opt/airflow/dags
+      - data_volume:/opt/airflow/data
+      - airflow_logs:/opt/airflow/logs  
     command: >
       bash -c "
       airflow db upgrade &&
       airflow scheduler
       "
 
-
 volumes:
   mysql_data:
+  airflow_logs:
+  dags_volume:
+  data_volume:
