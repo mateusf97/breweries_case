@@ -1,0 +1,63 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: airflow
+      MYSQL_USER: airflow
+      MYSQL_PASSWORD: airflow
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  airflow-webserver:
+    build: .
+    container_name: airflow_webserver
+    restart: always
+    environment:
+      - AIRFLOW__WEBSERVER__SECRET_KEY=f756e4f4990a001bb72e3d5e8e9388ec
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    depends_on:
+      - mysql
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs
+    ports:
+      - "8088:8080"
+    command: >
+      bash -c "
+      airflow db upgrade &&
+      airflow users create --username admin --firstname Air --lastname Flow --role Admin --password admin --email admin@example.com &&
+      airflow webserver
+      "
+
+  airflow-scheduler:
+    build: .
+    container_name: airflow_scheduler
+    restart: always
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__WEBSERVER__SECRET_KEY=f756e4f4990a001bb72e3d5e8e9388ec  
+    depends_on:
+      - mysql
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs  
+    command: >
+      bash -c "
+      airflow db upgrade &&
+      airflow scheduler
+      "
+
+
+volumes:
+  mysql_data:
