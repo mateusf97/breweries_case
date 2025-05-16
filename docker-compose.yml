@@ -23,7 +23,7 @@ services:
     environment:
       - AIRFLOW__WEBSERVER__SECRET_KEY=f756e4f4990a001bb72e3d5e8e9388ec
       - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
     depends_on:
       - mysql
@@ -36,7 +36,7 @@ services:
     command: >
       bash -c "
       airflow db upgrade &&
-      airflow users create --username admin --firstname Air --lastname Flow --role Admin --password admin --email admin@example.com --force &&
+      airflow users create --username admin --firstname Air --lastname Flow --role Admin --password admin --email admin@example.com &&
       airflow webserver
       "
 
@@ -47,7 +47,7 @@ services:
     restart: always
     environment:
       - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=mysql+pymysql://airflow:airflow@mysql/airflow
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__WEBSERVER__SECRET_KEY=f756e4f4990a001bb72e3d5e8e9388ec  
     depends_on:
