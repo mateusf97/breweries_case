@@ -1,0 +1,15 @@
+[2025-05-16T21:29:16.135+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewery_pipeline_bronze_silver_gold.extract_bronze_data manual__2025-05-16T21:29:12.715823+00:00 [queued]>
+[2025-05-16T21:29:16.143+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewery_pipeline_bronze_silver_gold.extract_bronze_data manual__2025-05-16T21:29:12.715823+00:00 [queued]>
+[2025-05-16T21:29:16.143+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-16T21:29:16.163+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_bronze_data> on 2025-05-16 21:29:12.715823+00:00
+[2025-05-16T21:29:16.169+0000] {standard_task_runner.py:57} INFO - Started process 131 to run task
+[2025-05-16T21:29:16.171+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'brewery_pipeline_bronze_silver_gold', 'extract_bronze_data', 'manual__2025-05-16T21:29:12.715823+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/brewery_pipeline_bronze_silver_gold.py', '--cfg-path', '/tmp/tmprve0honi']
+[2025-05-16T21:29:16.173+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask extract_bronze_data
+[2025-05-16T21:29:16.192+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:193 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-05-16T21:29:16.219+0000] {task_command.py:416} INFO - Running <TaskInstance: brewery_pipeline_bronze_silver_gold.extract_bronze_data manual__2025-05-16T21:29:12.715823+00:00 [running]> on host 293766d45543
+[2025-05-16T21:29:16.296+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mateus' AIRFLOW_CTX_DAG_ID='brewery_pipeline_bronze_silver_gold' AIRFLOW_CTX_TASK_ID='extract_bronze_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T21:29:12.715823+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T21:29:12.715823+00:00'
+[2025-05-16T21:29:16.366+0000] {brewery_pipeline_bronze_silver_gold.py:32} INFO - ✅ Dados salvos com sucesso em: /opt/***/data/bronze/breweries_raw.json
+[2025-05-16T21:29:16.368+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-05-16T21:29:16.378+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=brewery_pipeline_bronze_silver_gold, task_id=extract_bronze_data, execution_date=20250516T212912, start_date=20250516T212916, end_date=20250516T212916
+[2025-05-16T21:29:16.423+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-16T21:29:16.473+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

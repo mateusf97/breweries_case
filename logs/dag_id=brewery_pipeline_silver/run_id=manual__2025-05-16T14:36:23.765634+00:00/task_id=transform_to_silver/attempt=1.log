@@ -1,0 +1,15 @@
+[2025-05-16T14:36:26.212+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewery_pipeline_silver.transform_to_silver manual__2025-05-16T14:36:23.765634+00:00 [queued]>
+[2025-05-16T14:36:26.219+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewery_pipeline_silver.transform_to_silver manual__2025-05-16T14:36:23.765634+00:00 [queued]>
+[2025-05-16T14:36:26.219+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-05-16T14:36:26.232+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_to_silver> on 2025-05-16 14:36:23.765634+00:00
+[2025-05-16T14:36:26.235+0000] {standard_task_runner.py:57} INFO - Started process 69 to run task
+[2025-05-16T14:36:26.237+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'brewery_pipeline_silver', 'transform_to_silver', 'manual__2025-05-16T14:36:23.765634+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/brewery_pipeline_silver.py', '--cfg-path', '/tmp/tmphm96w975']
+[2025-05-16T14:36:26.238+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask transform_to_silver
+[2025-05-16T14:36:26.252+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:193 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-05-16T14:36:26.269+0000] {task_command.py:416} INFO - Running <TaskInstance: brewery_pipeline_silver.transform_to_silver manual__2025-05-16T14:36:23.765634+00:00 [running]> on host 293766d45543
+[2025-05-16T14:36:26.316+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewery_pipeline_silver' AIRFLOW_CTX_TASK_ID='transform_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T14:36:23.765634+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T14:36:23.765634+00:00'
+[2025-05-16T14:36:26.377+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.10/site-packages/pyarrow/pandas_compat.py:373 FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
+[2025-05-16T14:36:26.438+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-05-16T14:36:26.442+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=brewery_pipeline_silver, task_id=transform_to_silver, execution_date=20250516T143623, start_date=20250516T143626, end_date=20250516T143626
+[2025-05-16T14:36:26.489+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-16T14:36:26.497+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
