@@ -1752,3 +1752,45 @@
 [2025-05-16T23:32:17.515+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:32:17.514+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-05-16T23:32:17.524+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:32:17.524+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
 [2025-05-16T23:32:17.549+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.444 seconds
+[2025-05-16T23:32:47.847+0000] {processor.py:157} INFO - Started process (PID=1869) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:32:47.849+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:32:47.851+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:32:47.850+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:32:48.246+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:32:48.262+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:32:48.261+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:32:48.272+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:32:48.272+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:32:48.297+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.455 seconds
+[2025-05-16T23:33:18.603+0000] {processor.py:157} INFO - Started process (PID=1876) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:18.605+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:33:18.606+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:18.606+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:19.004+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:19.026+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:19.025+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:33:19.039+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:19.039+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:33:19.068+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.471 seconds
+[2025-05-16T23:33:49.376+0000] {processor.py:157} INFO - Started process (PID=1883) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:49.378+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:33:49.380+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:49.379+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:49.774+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:33:49.789+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:49.789+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:33:49.798+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:33:49.798+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:33:49.824+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.454 seconds
+[2025-05-16T23:34:20.119+0000] {processor.py:157} INFO - Started process (PID=1890) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:20.121+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:34:20.122+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:20.122+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:20.519+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:20.535+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:20.534+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:34:20.544+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:20.544+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:34:20.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.453 seconds
+[2025-05-16T23:34:50.847+0000] {processor.py:157} INFO - Started process (PID=1897) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:50.852+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:34:50.854+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:50.853+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:51.619+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:34:51.654+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:51.653+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:34:51.677+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:34:51.676+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:34:51.714+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.875 seconds
+[2025-05-16T23:35:06.262+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:35:06.263+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py for tasks to queue
+[2025-05-16T23:35:06.263+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:35:06.263+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:35:06.514+0000] {processor.py:839} INFO - DAG(s) dict_keys(['brewery_pipeline_bronze_silver_gold']) retrieved from /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py
+[2025-05-16T23:35:06.532+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:35:06.532+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-16T23:35:06.544+0000] {logging_mixin.py:151} INFO - [2025-05-16T23:35:06.544+0000] {dag.py:3722} INFO - Setting next_dagrun for brewery_pipeline_bronze_silver_gold to None, run_after=None
+[2025-05-16T23:35:06.571+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py took 0.312 seconds

@@ -1,37 +1,408 @@
 brewery_type,state,brewery_count
-brewpub,Colorado,1
-brewpub,New York,2
-brewpub,North Carolina,1
-brewpub,Ohio,1
-brewpub,Oregon,2
-brewpub,South Carolina,1
-closed,California,1
-closed,Washington,1
-contract,Maryland,1
-large,California,1
-large,Colorado,1
+bar,Berlin,5
+bar,Nevada,1
+bar,North Dakota,1
+bar,Singapore,28
+bar,Steiermark,2
+beergarden,Berlin,3
+brewpub,Alabama,4
+brewpub,Alaska,14
+brewpub,Arizona,46
+brewpub,Arkansas,18
+brewpub,Aveiro,1
+brewpub,Beja,1
+brewpub,Busan,8
+brewpub,California,253
+brewpub,Chungcheongbukdo,1
+brewpub,Chungcheongnamdo,1
+brewpub,Clare,1
+brewpub,Coimbra,1
+brewpub,Colorado,141
+brewpub,Connecticut,10
+brewpub,Cork,3
+brewpub,Daejeon,1
+brewpub,Deagu,1
+brewpub,Delaware,14
+brewpub,District of Columbia,6
+brewpub,Dublin,3
+brewpub,East Sussex,5
+brewpub,Florida,65
+brewpub,Gangwondo,7
+brewpub,Georgia,25
+brewpub,Gwangju,1
+brewpub,Gyeonggido,8
+brewpub,Gyeongsangbukdo,2
+brewpub,Gyeongsangnamdo,3
+brewpub,Hawaii,12
+brewpub,Idaho,23
+brewpub,Illinois,88
+brewpub,Incheon,2
+brewpub,Indiana,76
+brewpub,Iowa,32
+brewpub,Jejudo,3
+brewpub,Jeollabukdo,3
+brewpub,Jeollanamdo,1
+brewpub,Kansas,20
+brewpub,Kentucky,12
+brewpub,Kerry,1
+brewpub,Leiria,1
+brewpub,Lisboa,2
+brewpub,Louisiana,5
+brewpub,Maine,31
+brewpub,Maryland,26
+brewpub,Massachusetts,34
+brewpub,Michigan,199
+brewpub,Minnesota,44
+brewpub,Mississippi,2
+brewpub,Missouri,46
+brewpub,Montana,17
+brewpub,Nebraska,21
+brewpub,Nevada,20
+brewpub,New Hampshire,22
+brewpub,New Jersey,16
+brewpub,New Mexico,44
+brewpub,New York,111
+brewpub,North Carolina,73
+brewpub,North Dakota,8
+brewpub,Ohio,94
+brewpub,Oklahoma,5
+brewpub,Oregon,106
+brewpub,Osaka,6
+brewpub,Pennsylvania,158
+brewpub,Porto,1
+brewpub,Rhode Island,9
+brewpub,Seoul,14
+brewpub,Singapore,4
+brewpub,South Carolina,29
+brewpub,South Dakota,15
+brewpub,Steiermark,1
+brewpub,Tennessee,26
+brewpub,Texas,77
+brewpub,Utah,15
+brewpub,Vermont,16
+brewpub,Virginia,56
+brewpub,Washington,113
+brewpub,West Sussex,5
+brewpub,West Virginia,13
+brewpub,Westmeath,1
+brewpub,Wisconsin,76
+brewpub,Wyoming,16
+brewpub,dolnośląskie,11
+closed,Alaska,4
+closed,Bute,1
+closed,California,51
+closed,Colorado,9
+closed,Connecticut,12
+closed,Hawaii,3
+closed,Idaho,5
+closed,Iowa,2
+closed,Louisiana,6
+closed,Missouri,13
+closed,Nebraska,2
+closed,New Hampshire,1
+closed,North Dakota,3
+closed,Ohio,1
+closed,Oklahoma,1
+closed,Oregon,11
+closed,South Carolina,1
+closed,South Dakota,2
+closed,Texas,2
+closed,Utah,4
+closed,Washington,74
+closed,West Virginia,3
+closed,Wisconsin,10
+closed,Wyoming,6
+contract,Alabama,1
+contract,Alaska,1
+contract,Arizona,4
+contract,Arkansas,1
+contract,California,27
+contract,Colorado,9
+contract,Connecticut,5
+contract,District of Columbia,2
+contract,Florida,6
+contract,Georgia,2
+contract,Idaho,1
+contract,Illinois,11
+contract,Indiana,2
+contract,Iowa,1
+contract,Kentucky,1
+contract,Maine,2
+contract,Maryland,6
+contract,Massachusetts,7
+contract,Michigan,3
+contract,Minnesota,5
+contract,Mississippi,1
+contract,Missouri,1
+contract,Montana,2
+contract,Nevada,3
+contract,New Hampshire,1
+contract,New Jersey,4
+contract,New Mexico,1
+contract,New York,22
+contract,North Carolina,5
+contract,Ohio,7
+contract,Oklahoma,4
+contract,Oregon,3
+contract,Pennsylvania,6
+contract,South Carolina,1
+contract,South Dakota,1
+contract,Tennessee,1
+contract,Texas,6
+contract,Virginia,5
+contract,Washington,4
+contract,Wisconsin,14
+large,Arizona,2
+large,Berlin,2
+large,California,15
+large,Colorado,7
+large,Cork,2
+large,Delaware,1
+large,Dublin,1
+large,East Sussex,1
+large,Florida,4
+large,Georgia,3
 large,Idaho,1
-large,Oregon,4
-micro,Arizona,3
-micro,California,2
-micro,Colorado,1
-micro,Delaware,1
-micro,Illinois,1
-micro,Indiana,3
-micro,Iowa,1
-micro,Laois,1
-micro,Massachusetts,1
-micro,Michigan,1
-micro,Minnesota,3
-micro,Mississippi,1
-micro,Nevada,1
-micro,North Carolina,1
-micro,Ohio,1
-micro,Oklahoma,1
-micro,Pennsylvania,1
-micro,Texas,2
-micro,Vermont,1
-micro,Virginia,1
-micro,Washington,1
-micro,Wisconsin,2
-proprietor,Colorado,1
+large,Illinois,4
+large,K�rnten,2
+large,Maryland,1
+large,Missouri,1
+large,New Hampshire,1
+large,New Jersey,1
+large,New York,4
+large,Nieder�sterreich,2
+large,North Carolina,4
+large,Oberösterreich,1
+large,Ohio,2
+large,Oregon,6
+large,Singapore,1
+large,Steiermark,4
+large,Texas,4
+large,Virginia,5
+large,Washington,3
+large,Wisconsin,5
+location,Washington,1
+micro,Alabama,32
+micro,Alaska,29
+micro,Argyll,4
+micro,Arizona,59
+micro,Arkansas,22
+micro,Aveiro,1
+micro,Blekinge,6
+micro,Bouche du Rhône,3
+micro,Busan,1
+micro,California,466
+micro,Carlow,1
+micro,Chungcheongnamdo,2
+micro,Colorado,228
+micro,Connecticut,48
+micro,Cork,5
+micro,Delaware,10
+micro,District of Columbia,5
+micro,Donegal,3
+micro,Dublin,10
+micro,East Dunbartonshire,1
+micro,East Sussex,21
+micro,Faro,1
+micro,Florida,190
+micro,Galway,1
+micro,Georgia,47
+micro,Gyeonggido,1
+micro,Gyeongsangbukdo,1
+micro,Halland,4
+micro,Hawaii,7
+micro,Idaho,36
+micro,Illinois,123
+micro,Indiana,60
+micro,Iowa,56
+micro,Kansas,18
+micro,Kentucky,41
+micro,Kerry,2
+micro,Kildare,3
+micro,Kilkenny,1
+micro,Laois,2
+micro,Limerick,2
+micro,Lisboa,3
+micro,Longford,1
+micro,Louisiana,27
+micro,Louth,1
+micro,MIssouri,1
+micro,Maine,70
+micro,Maryland,52
+micro,Massachusetts,93
+micro,Mayo,2
+micro,Meath,1
+micro,Michigan,143
+micro,Middle,2
+micro,Minnesota,111
+micro,Mississippi,13
+micro,Missouri,66
+micro,Monaghan,1
+micro,Montana,61
+micro,Nebraska,35
+micro,Nevada,22
+micro,New Hampshire,46
+micro,New Jersey,79
+micro,New Mexico,30
+micro,New York,226
+micro,North Carolina,180
+micro,North Dakota,12
+micro,Offaly,2
+micro,Ohio,163
+micro,Oklahoma,30
+micro,Oregon,142
+micro,Osaka,4
+micro,Pennsylvania,129
+micro,Portalegre,1
+micro,Porto,1
+micro,Rhode Island,20
+micro,Roscommon,1
+micro,Sligo,2
+micro,South Carolina,38
+micro,South Dakota,24
+micro,Tennessee,59
+micro,Texas,196
+micro,Tipperary,2
+micro,Utah,21
+micro,Vermont,34
+micro,Virginia,152
+micro,Washington,268
+micro,Waterford,2
+micro,West Dunbartonshire,4
+micro,West Sussex,19
+micro,West Virginia,21
+micro,Wexford,2
+micro,Wicklow,2
+micro,Wisconsin,99
+micro,Wyoming,24
+micro,dolnośląskie,20
+nano,K�rnten,1
+nano,North Dakota,2
+nano,Oberösterreich,1
+nano,Tennessee,1
+nano,Washington,6
+nano,West Virginia,1
+nano,Wisconsin,1
+planning,Alabama,8
+planning,Alaska,2
+planning,Arizona,13
+planning,Arkansas,4
+planning,California,64
+planning,Colorado,39
+planning,Connecticut,17
+planning,Delaware,2
+planning,District of Columbia,2
+planning,Florida,38
+planning,Georgia,19
+planning,Illinois,23
+planning,Indiana,20
+planning,Kansas,7
+planning,Kentucky,3
+planning,Louisiana,5
+planning,Maine,7
+planning,Maryland,18
+planning,Massachusetts,16
+planning,Michigan,21
+planning,Minnesota,13
+planning,Mississippi,1
+planning,Missouri,3
+planning,Montana,10
+planning,Nebraska,4
+planning,Nevada,5
+planning,New Hampshire,7
+planning,New Jersey,14
+planning,New Mexico,5
+planning,New York,37
+planning,North Carolina,29
+planning,Ohio,26
+planning,Oklahoma,4
+planning,Oregon,12
+planning,Pennsylvania,36
+planning,South Carolina,8
+planning,South Dakota,2
+planning,Tennessee,20
+planning,Texas,56
+planning,Utah,3
+planning,Vermont,2
+planning,Virginia,34
+planning,Washington,5
+planning,West Virginia,1
+planning,Wisconsin,9
+proprietor,California,13
+proprietor,Colorado,4
+proprietor,Florida,4
+proprietor,Georgia,1
+proprietor,Idaho,1
+proprietor,Illinois,5
+proprietor,Indiana,1
+proprietor,Kansas,1
+proprietor,Maine,1
+proprietor,Maryland,2
+proprietor,Massachusetts,2
+proprietor,Minnesota,2
+proprietor,Missouri,3
+proprietor,New Mexico,1
+proprietor,New York,10
+proprietor,North Carolina,3
+proprietor,Ohio,1
+proprietor,Oregon,2
+proprietor,Pennsylvania,2
+proprietor,Rhode Island,1
+proprietor,South Dakota,1
+proprietor,Tennessee,2
+proprietor,Texas,1
+proprietor,Washington,2
+proprietor,West Virginia,1
+proprietor,Wisconsin,2
+regional,Alaska,1
+regional,Arizona,1
+regional,California,29
+regional,Colorado,11
+regional,Connecticut,2
+regional,Cork,1
+regional,Delaware,1
+regional,District of Columbia,1
+regional,Donegal,1
+regional,Dublin,2
+regional,Florida,5
+regional,Galway,2
+regional,Georgia,3
+regional,Hawaii,1
+regional,Illinois,3
+regional,Indiana,3
+regional,Kansas,1
+regional,Kentucky,1
+regional,Kilkenny,2
+regional,Louisiana,1
+regional,Maine,3
+regional,Maryland,4
+regional,Massachusetts,12
+regional,Michigan,9
+regional,Minnesota,8
+regional,Missouri,8
+regional,Montana,2
+regional,New Hampshire,2
+regional,New Jersey,1
+regional,New Mexico,2
+regional,New York,9
+regional,North Carolina,13
+regional,Ohio,9
+regional,Oregon,13
+regional,Pennsylvania,13
+regional,Rhode Island,1
+regional,South Carolina,2
+regional,Tennessee,2
+regional,Texas,10
+regional,Utah,2
+regional,Vermont,7
+regional,Virginia,3
+regional,Washington,7
+regional,Wicklow,1
+regional,Wisconsin,9
+regional,Wyoming,1
+regional,dolnośląskie,3
+taproom,East Sussex,4
+taproom,Pennsylvania,1
+taproom,Washington,3
+taproom,West Sussex,7
+taproom,Wyoming,5
