@@ -3,3 +3,4 @@ pandas
 mysql-connector-python
 apache-airflow-providers-mysql
 pymysql
+pytest

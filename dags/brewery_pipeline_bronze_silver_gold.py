@@ -17,7 +17,7 @@ default_args = {
     'owner': 'mateus',
     'depends_on_past': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=0.5),
+    'retry_delay': timedelta(minutes=5),
 }
 
 
@@ -217,8 +217,8 @@ def aggregate_gold():
 # DAG principal
 with DAG(
     dag_id="brewery_pipeline_bronze_silver_gold",
-    start_date=datetime(2024, 1, 1),
-    schedule_interval=None,
+    start_date=datetime(2025, 5, 18),
+    schedule_interval='00 09 * * *',
     catchup=False,
     default_args=default_args,
     description="Pipeline Bronze -> Silver -> Gold",
