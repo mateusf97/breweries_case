@@ -1,0 +1,53 @@
+[2025-05-19T05:46:57.154+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-19T05:46:57.154+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-19T05:46:57.154+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-19T05:46:57.155+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2025-05-19T05:46:57.155+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2025-05-19T05:46:57.210+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py     33  0.02s             0           0
+================================================================================
+[2025-05-19T05:47:27.302+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py                           1           0  0.25s           2025-05-19T05:46:57
+================================================================================
+[2025-05-19T05:47:57.605+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py                           1           0  0.24s           2025-05-19T05:47:27
+================================================================================
+[2025-05-19T05:48:27.959+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py                           1           0  0.32s           2025-05-19T05:47:58
+================================================================================
+[2025-05-19T05:48:58.387+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py                           1           0  0.27s           2025-05-19T05:48:28
+================================================================================
+[2025-05-19T05:49:28.827+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/brewery_pipeline_bronze_silver_gold.py                           1           0  0.26s           2025-05-19T05:48:58
+================================================================================
