@@ -60,13 +60,12 @@ for url in failed_urls:
   - brewery_count_by_type_and_state.csv
 
 ## 📊 Página Web
-Lê os arquivos da GOLD, permite filtros por estado e tipo.
+Fiz o processamento dos arquivos da GOLD, e gerei um mapa HTML+JS para visualizar as informações, basta acessar o arquivo .html
 
 **Acesso:**
+
 ```
-http://localhost:8088/
-Usuário: Admin
-Senha: admin
+html_view/brewery_dashboard_final_mateus.html
 ```
 
 ## 📬 Sistema de Monitoramento
@@ -80,10 +79,9 @@ Exemplo de log:
 ## 🧠 Tecnologias Utilizadas
 - Airflow
 - Python
-- PySpark / Pandas
+- PySpark
 - Parquet
 - Docker
-- Streamlit
 - Git
 
 ## 📈 Camadas Adicionais no GOLD
