@@ -91,6 +91,8 @@ Além das agregações principais, temos também:
 - brewery_count_by_type_and_state.csv
 
 ## 🗂 Estrutura de Diretórios
+
+```
 .
 ├── data/
 │   ├── bronze/
@@ -99,4 +101,5 @@ Além das agregações principais, temos também:
 ├── dags/
 ├── web/
 └── docker-compose.yml
+```
 
