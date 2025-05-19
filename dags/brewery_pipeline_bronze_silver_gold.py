@@ -44,6 +44,7 @@ def extract_bronze_data():
         logging.info(f"🔢 Total de registros: {total_breweries} | Total de páginas: {total_pages}")
     except Exception as e:
         logging.error("❌ Erro ao obter os metadados da API:", e)
+        send_email_error("extract_bronze_data - meta", traceback.format_exc())
         return
 
     # Loop pelas páginas com delay de 1 segundo
@@ -58,6 +59,7 @@ def extract_bronze_data():
         except Exception as e:
             logging.error(f"⚠️ Erro na página {page}: {url}")
             failed_urls.append(url)
+            send_email_error("extract_bronze_data - retry", traceback.format_exc())
         time.sleep(1)  # Aguarda 1 segundo entre chamadas
 
     # Tenta novamente as URLs que falharam
@@ -70,6 +72,8 @@ def extract_bronze_data():
             logging.info(f"🔁 Retry bem-sucedido para: {url}")
         except Exception as e:
             logging.error(f"❌ Falha permanente em: {url}")
+            send_email_error("extract_bronze_data - save", traceback.format_exc())
+
 
     # Salva os dados em JSON
     output_path = "/opt/airflow/data/bronze/breweries_raw.json"
@@ -145,6 +149,7 @@ def transform_to_silver():
     except Exception as e:
         logging.error("❌ Erro durante a transformação da camada Silver")
         logging.error(traceback.format_exc())
+        send_email_error("transform_to_silver", traceback.format_exc())
 
 import os
 import glob
@@ -212,6 +217,7 @@ def aggregate_gold():
     except Exception as e:
         logging.error("❌ Erro na agregação da camada Gold")
         logging.error(traceback.format_exc())
+        send_email_error("aggregate_gold", traceback.format_exc())
 
 
 # DAG principal
@@ -241,3 +247,12 @@ with DAG(
     )
 
     task_extract_bronze >> transform_task >> aggregate_task
+
+# Placeholder para envio de e-mails
+def send_email_error(etapa, erro):
+    """
+    Envio de email se necessário, pode ser configurado um SMTP por exemplo, 
+    Eu, Mateus, Não implementei essa etapa, pois exigiria a configuração de um SMTP externo ok?
+    e acredito que esse não seja o objetivo desse teste
+    """
+    pass
