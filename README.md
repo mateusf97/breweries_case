@@ -103,3 +103,40 @@ Além das agregações principais, temos também:
 └── docker-compose.yml
 ```
 
+
+# ✅ Testes Automatizados - Brewery Pipeline
+
+Este projeto inclui uma suíte de testes para validar o funcionamento do pipeline de dados que extrai, transforma e agrega informações da Open Brewery API.
+
+## 🔧 Pré-requisitos
+
+- Projeto já rodando com Docker e Airflow.
+- A DAG `brewery_pipeline_bronze_silver_gold` deve ter sido executada pelo menos uma vez.
+
+## 🚀 Executando os Testes
+
+### 1. Acesse o container do Airflow:
+
+```bash
+docker exec -it airflow_scheduler bash
+```
+
+### 2. Execute os testes com Pytest:
+
+```bash
+pytest dags/test/test_pipeline.py --disable-warnings
+```
+
+## 🧪 O que está sendo testado?
+
+| Teste                           | Objetivo                                               |
+|-------------------------------|--------------------------------------------------------|
+| `test_api_status_code_200`     | Verifica se a API responde com status 200             |
+| `test_api_content`             | Valida o conteúdo da resposta da API                  |
+| `test_extract_creates_bronze`  | Verifica a criação correta do arquivo bronze JSON     |
+| `test_transform_creates_silver`| Verifica a transformação para Parquet na camada Silver|
+| `test_aggregate_creates_gold`  | Confirma a geração dos arquivos CSV agregados         |
+
+Todos os arquivos de output são esperados em `/opt/airflow/data`.
+
+
